@@ -19,7 +19,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.586"
+        android:onClick="displayActivity"/>
 
     <Button
         android:id="@+id/relaxButton5"
@@ -34,7 +35,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintVertical_bias="0.742"
+        android:onClick="displayActivity"/>
 
     <Button
         android:id="@+id/cbtButton"
@@ -49,7 +51,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.897"
+        android:onClick="displayActivity"/>
 
     <Button
         android:id="@+id/relaxButton"
@@ -64,7 +67,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.273"
+        android:onClick="displayActivity"/>
 
     <Button
         android:id="@+id/awareButton"
@@ -79,7 +83,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.43"
+        android:onClick="displayActivity"/>
 
     <TextView
         android:id="@+id/niceText"
