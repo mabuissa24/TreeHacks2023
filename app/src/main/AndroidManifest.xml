@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.HAY.AddItem"></activity>
+        <activity android:name="com.example.HAY.DisplaySocial"/>
+        <activity android:name="com.example.HAY.DisplayRelaxation"/>
+        <activity android:name="com.example.HAY.DisplayAwareness"/>
+        <activity android:name="com.example.HAY.DisplayCBT"/>
+        <activity android:name="com.example.HAY.DisplayPhysical"/>
         <activity android:name="com.example.HAY.MainActivity" />
 
         <activity android:name="com.example.HAY.DailyEmotion" />

@@ -23,7 +23,7 @@
         android:onClick="displayPhys"/>
 
     <Button
-        android:id="@+id/relaxButton5"
+        android:id="@+id/socialButton"
         android:layout_width="300dp"
         android:layout_height="90dp"
         android:background="@color/colorPrimary"
@@ -68,7 +68,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.273"
-        android:onClick="exitActivity"/>
+        android:onClick="displayRelax"/>
 
     <Button
         android:id="@+id/awareButton"
@@ -88,10 +88,10 @@
 
     <TextView
         android:id="@+id/niceText"
-        android:layout_width="262dp"
-        android:layout_height="74dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal|center_vertical"
-        android:text="Pleasant and kind note to be added......"
+        android:text="Congrats on completing your self care activity for today!"
         android:textColor="@color/colorPrimary"
         android:textSize="30dp"
         android:textStyle="bold"

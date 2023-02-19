@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+
+        <TextView
+            android:id="@+id/relax1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="100dp"
+            android:text="Send a short message to a family member or friend."
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+
+
+
+        <TextView
+            android:id="@+id/relax2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="Write about a memory with someone you love."
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@ public class DisplayPhysical extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_daily); // TODO: Change
+        setContentView(R.layout.physical); // TODO: Change
 //        String[] cats = Activities.getCategories();
 //        String cat = cats[(int) (Math.random() * cats.length)];
 //        String[] IDs = Activities.getIDs(cat);
