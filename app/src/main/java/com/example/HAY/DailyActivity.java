@@ -1,36 +1,16 @@
 package com.example.HAY;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.JsonReader;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.widget.ListAdapter;
-import android.widget.ListView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import org.w3c.dom.Text;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.util.ArrayList;
-import java.io.FileReader;
 import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
 
 
 public class DailyActivity extends AppCompatActivity {
@@ -50,15 +30,37 @@ public class DailyActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_daily); // TODO: Change
         String[] cats = Activities.getCategories();
         String cat = cats[(int)(Math.random() * cats.length)];
         String[] IDs = Activities.getIDs(cat);
-        String ID = cats[(int)(Math.random() * IDs.length)];
-        String[] randActivity = Activities.getActivity(cat, ID);
-
+        String ID = IDs[(int)(Math.random() * IDs.length)];
+        System.out.println(ID);
+        String[] randAct = Activities.getActivity(cat, ID);
+        if (randAct == null){
+            System.err.println("Failed to find activity");
+            System.exit(1);
+        }
+        TextView one = findViewById(R.id.PromptAText1);
+        one.setText(randAct[0]);
+        Button link = findViewById(R.id.PromptALink);
+        link.setText(randAct[1]);
+        TextView two = findViewById(R.id.PromptAText2);
+        two.setText(randAct[2]);
 
     }
+
+    public void exitActivity(View view) {
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+
+//        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+//                    Intent intent = new Intent(getApplicationContext(), DailyActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 //
 //    private void gatherdata() {

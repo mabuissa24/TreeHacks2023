@@ -13,6 +13,8 @@
         <activity android:name="com.example.HAY.MainActivity" />
 
         <activity android:name="com.example.HAY.DailyEmotion" />
+
+        <activity android:name="com.example.HAY.DailyActivity" />
         <activity android:name="com.example.HAY.SplashActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

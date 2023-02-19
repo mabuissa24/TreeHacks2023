@@ -8,6 +8,10 @@ public class Activities {
             "MuscleRelaxation"}, {"Journal", "Grateful", "Happy", "Memory"},
             {"Hydrate", "Dance", "Move"}, {"Anxiety"}, {"ReachOut"}};
 
+    public static String[][] idInteractive = {{"timer", "", "", "",
+            ""}, {"input", "input", "input", "input"},
+            {"", "", "timer"}, {"input"}, {""}};
+
     public static String[][][] activities = {{{"Take one minute to do ", "box breathing", "!"},
             {"What is one thing you can notice with each sense?", "", ""},
             {"Take one minute to ", "meditate", "."},
@@ -38,7 +42,10 @@ public class Activities {
     public static String[] getActivity(String category, String ID) {
         for (int i = 0; i < categories.length; i++) {
             if (categories[i].equals(category)) {
-                for (int j = 0; j < IDs.length; i++) {
+//                System.out.println("Category " + categories[i]);
+                for (int j = 0; j < IDs[i].length; j++) {
+
+//                    System.out.println("ID" + IDs[i][j]);
                     if (IDs[i][j].equals(ID)) {
                         return activities[i][j];
                     }

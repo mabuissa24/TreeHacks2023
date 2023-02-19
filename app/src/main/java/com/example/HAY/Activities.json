@@ -1,0 +1,16 @@
+{"Relaxation": {"BoxBreathing": ["Take one minute to do ", "box breathing", "!"],
+  "Senses": ["What is one thing you can notice with each sense?", "", ""],
+  "Meditate": ["Take one minute to ", "meditate", "."],
+  "BodyScan": ["Do a ", "body scan", "."],
+  "MuscleRelaxation": ["Do ", "progressive muscle relaxation", "."]},
+"Awareness": {"Journal": ["Take a minute to ", "journal", "."],
+  "Grateful":  ["What's one thing you're ", "grateful", " for?"],
+  "Happy":  ["What's something that made you happy recently?", "", ""],
+  "Memory": ["Write about a fond memory.", "", ""]},
+"Physical Health": {"Hydrate": ["Drink some water!", "", ""],
+  "Dance":  ["Choose a song and dance for a few minutes!", "", ""],
+  "Move":  ["Move around or do an exercise of your choice for a minute!", "", ""]},
+"CBT Exercises": {"Anxiety":  ["What's something you're ", "anxious",
+  "about? Follow that train of thought to its conclusion."]},
+"Social Connection": {"ReachOut":  ["Send a short message to a family member or friend.", "", ""]}
+}
