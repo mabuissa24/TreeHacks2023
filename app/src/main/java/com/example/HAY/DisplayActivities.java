@@ -18,26 +18,27 @@ import java.util.Dictionary;
 
 public class DisplayActivities extends AppCompatActivity {
 
-//
+    //
 //    ArrayList<ListItem> items;
     Dictionary<String, String[]> activities;
-//
+
+    //
 //    ListAdapter adapter;
 //
 //    ListView todolist;
 //
 //    private DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily); // TODO: Change
         String[] cats = Activities.getCategories();
-        String cat = cats[(int)(Math.random() * cats.length)];
+        String cat = cats[(int) (Math.random() * cats.length)];
         String[] IDs = Activities.getIDs(cat);
-        String ID = IDs[(int)(Math.random() * IDs.length)];
+        String ID = IDs[(int) (Math.random() * IDs.length)];
         System.out.println(ID);
         String[] randAct = Activities.getActivity(cat, ID);
-        if (randAct == null){
+        if (randAct == null) {
             System.err.println("Failed to find activity");
             System.exit(1);
         }
@@ -47,3 +48,5 @@ public class DisplayActivities extends AppCompatActivity {
         link.setText(randAct[1]);
         TextView two = findViewById(R.id.PromptAText2);
         two.setText(randAct[2]);
+    }
+}

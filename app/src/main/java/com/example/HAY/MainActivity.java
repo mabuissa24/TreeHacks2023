@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
@@ -31,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-public void displayActivity(View view) {
-    Intent intent = new intent(getApplicationContext(), DisplayActivities.class);
-    startActivity(intent);
-}
+    public void displayActivity(View view) {
+        Intent intent = new Intent(getApplicationContext(), DisplayActivities.class);
+        startActivity(intent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
