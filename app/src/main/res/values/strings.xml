@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">PersonalToDoList</string>
+    <string name="app_name">HAY</string>
+    <string name="QPrompt">How are you feeling?</string>
 </resources>

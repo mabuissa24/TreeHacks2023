@@ -1,4 +1,4 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,14 +63,19 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-                    items.add(new ListItem(snapshot.child("text").getValue().toString(),
-                            Boolean.parseBoolean(snapshot.child("isCheck").getValue().toString()),
-                            snapshot.getKey()));
+                    if (snapshot.child("text").getValue() != null) {
+                        items.add(new ListItem(snapshot.child("text").getValue().toString(),
+                                Boolean.parseBoolean(snapshot.child("isCheck").getValue().toString()),
+                                snapshot.getKey()));
+                    }
+                    else{
+                        snapshot.getRef().removeValue();
+                    }
                 }
 
                 //set adapter
                 adapter = new ListItemAdapter(MainActivity.this, R.layout.list_row, items);
-                todolist.setAdapter(adapter);
+                todolist.setAdapter(adapter); // These lines of code make the to do items display
             }
 
             @Override

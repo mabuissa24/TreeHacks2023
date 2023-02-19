@@ -1,20 +1,15 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 import android.content.DialogInterface;
 import android.text.InputType;
-import android.view.ContextThemeWrapper;
 import android.widget.ArrayAdapter;
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 

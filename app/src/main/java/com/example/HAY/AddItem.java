@@ -1,4 +1,4 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,9 +28,10 @@ public class AddItem extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DatabaseReference dr = mDatabase.child("myList").push();
+                DatabaseReference dr = mDatabase.child("items").push();
                 dr.child("text").setValue(newItemText.getText().toString());
                 dr.child("isCheck").setValue(false);
+
 
                 Toast.makeText(getApplicationContext(), "Added!", Toast.LENGTH_SHORT).show();
                 finish();

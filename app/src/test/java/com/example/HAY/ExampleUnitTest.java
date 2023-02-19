@@ -1,4 +1,4 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 import org.junit.Test;
 

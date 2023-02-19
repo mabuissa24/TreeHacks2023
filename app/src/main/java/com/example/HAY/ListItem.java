@@ -1,4 +1,4 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 public class ListItem {
     String text;

@@ -1,4 +1,4 @@
-package com.example.personaltodolist;
+package com.example.HAY;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +21,8 @@ public class SplashActivity extends AppCompatActivity {
                     //then start the next activity
                     //DatabaseReference dr = FirebaseDatabase.getInstance().getReference().child("hi");
                     //dr.setValue("bye");
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), DailyEmotion.class);
+//                    Intent intent = new Intent(getApplicationContext(), DailyActivity.class);
                     startActivity(intent);
                   //  overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     finish();
