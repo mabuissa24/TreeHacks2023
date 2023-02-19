@@ -6,6 +6,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.JsonReader;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -18,20 +19,25 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.util.ArrayList;
 import java.io.FileReader;
+import java.util.Dictionary;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.simple.parser.*;
+
 
 
 public class DailyActivity extends AppCompatActivity {
 
 //
 //    ArrayList<ListItem> items;
+    Dictionary<String, String[]> activities;
 //
 //    ListAdapter adapter;
 //
@@ -40,29 +46,20 @@ public class DailyActivity extends AppCompatActivity {
 //    private DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
 //
 //
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) throws Exception{
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // parsing file "JSONExample.json"
-        JSONObject jo = new JSONObject("Activities.json");
-
-        // typecasting obj to JSONObject
-
-        // getting firstName and lastName
-//        String[] categories = [(String) jo.get("Relaxation");
-//        String lastName = (String) jo.get("lastName");
-//
-//        System.out.println(firstName);
-//        System.out.println(lastName);
-
-        // getting age
-        long age = (long) jo.get("age");
-        System.out.println(age);
+        String[] cats = Activities.getCategories();
+        String cat = cats[(int)(Math.random() * cats.length)];
+        String[] IDs = Activities.getIDs(cat);
+        String ID = cats[(int)(Math.random() * IDs.length)];
+        String[] randActivity = Activities.getActivity(cat, ID);
 
 
     }
+
 //
 //    private void gatherdata() {
 //        items = new ArrayList<ListItem>();
