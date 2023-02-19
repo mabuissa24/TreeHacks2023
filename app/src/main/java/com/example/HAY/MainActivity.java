@@ -37,18 +37,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final SwipeRefreshLayout pullToRefresh = findViewById(R.id.pullToRefresh);
-        pullToRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh() {
-                gatherdata(); // your code
-                pullToRefresh.setRefreshing(false);
-            }
-        });
-
-        todolist = (ListView) findViewById(R.id.toDoList);
-
-        gatherdata();
 
 
     }
