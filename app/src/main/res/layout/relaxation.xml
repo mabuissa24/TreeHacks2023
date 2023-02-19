@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relax"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/relaxlist"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/relax1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="100dp"
+            android:text="Take one minute to do box breathing!"
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/relax2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="What is one thing you can notice with each sense?"
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/relax3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="Take one minute to      meditate."
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/relax4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="Do a body scan."
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/relax5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="Do progressive muscle relaxation."
+            android:textColor="@color/colorAccentLight"
+            android:textSize="30dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,12 +30,32 @@ public class MainActivity extends AppCompatActivity {
 
     ListView todolist;
 
-    private DatabaseReference mDatabase;
-
-    public void displayActivity(View view) {
-        Intent intent = new Intent(getApplicationContext(), DisplayActivities.class);
+    public void displayRelax(View view) {
+        System.out.println("In Relax");
+        System.exit(0);
+        Intent intent = new Intent(getApplicationContext(), DisplayRelaxation.class);
         startActivity(intent);
     }
+    public void displayAware(View view) {
+        Intent intent = new Intent(getApplicationContext(), DisplayAwareness.class);
+        startActivity(intent);
+    }
+    public void displayCBT(View view) {
+        Intent intent = new Intent(getApplicationContext(), DisplayCBT.class);
+        startActivity(intent);
+    }
+    public void displayPhys(View view) {
+        Intent intent = new Intent(getApplicationContext(), DisplayPhysical.class);
+        startActivity(intent);
+    }
+    public void displaySocial(View view) {
+        Intent intent = new Intent(getApplicationContext(), DisplaySocial.class);
+        startActivity(intent);
+    }
+
+    private DatabaseReference mDatabase;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

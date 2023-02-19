@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/greatIcon"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
@@ -22,6 +23,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="175dp"
@@ -33,44 +35,66 @@
 
         <ImageButton
             android:id="@+id/great"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
             android:onClick="dailyActivity"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:src="@mipmap/greaticon" />
 
         <ImageButton
             android:id="@+id/good"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+            android:layout_width="129dp"
+            android:layout_height="72dp"
             android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@null"
             android:onClick="dailyActivity"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@mipmap/goodicon" />
 
         <ImageButton
             android:id="@+id/okay"
+
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
             android:onClick="dailyActivity"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@mipmap/mehicon" />
 
         <ImageButton
             android:id="@+id/bad"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
             android:onClick="dailyActivity"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@mipmap/badicon" />
 
         <ImageButton
             android:id="@+id/awful"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@color/colorPrimary"
             android:onClick="dailyActivity"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:src="@mipmap/awfulicon" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
