@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
-
+public void displayActivity(View view) {
+    Intent intent = new intent(getApplicationContext(), DisplayActivities.class);
+    startActivity(intent);
+}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
